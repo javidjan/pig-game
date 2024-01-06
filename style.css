@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+
+body {
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  background-attachment: fixed; /* cover the background not only the container */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: 350px 200px 350px;
+  width: 70%;
+  margin: auto;
+  padding-top: 5rem;
+}
+
+.player-box {
+  width: 200px;
+  height: 100px;
+  border-radius: 50rem;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  display: grid;
+  place-items: center;
+  background-color: #c7365f;
+  opacity: 0.8;
+  color: #fff;
+  transition: all 0.75s;
+}
+
+#player-0-div {
+  display: grid;
+  place-items: center;
+}
+
+#player-1-div {
+  display: grid;
+  place-items: center;
+}
+
+#middle-div {
+  display: grid;
+  place-items: center;
+}
+
+/* for removing space  */
+p {
+  margin: 0;
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    width: 70%;
+    margin: auto;
+    padding-top: 3rem;
+  }
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+#player-0-total-score {
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+}
+
+#player-1-total-score {
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+}
+
+.btn {
+  text-transform: uppercase;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 200;
+  color: #444;
+  background: none;
+  cursor: pointer;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 0.7rem 2.5rem;
+  border-radius: 20rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.btn--new {
+  top: 4rem;
+}
+.btn--roll {
+  top: 39.3rem;
+}
+.btn--hold {
+  top: 46.1rem;
+}
+
+.dice {
+  top: 2rem;
+  height: 5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.player--active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.de-active {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.hidden {
+  display: none;
+}
+
+.winner_player {
+  background-color: #444;
+}
